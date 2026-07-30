@@ -1,3 +1,6 @@
+# Forest
+
+Forest is an easy machine from HackTheBox that starts with identifying users via RPC, then using that list of users to perform an AS-REP Roast attack. From there, we perform domain analysis via Bloodhound and identify some misconfigurations that eventually allow us to perform a DCSync attack and gain access to the Administrator account.
 
 ### Initial Reconnaissance
 
