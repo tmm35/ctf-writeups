@@ -71,11 +71,13 @@ nxcspray all 10.129.41.5 -u 'svc-alfresco' -p 's3rvice'
 <img width="1612" height="357" alt="image" src="https://github.com/user-attachments/assets/e67bb9a8-24c3-485c-87f3-d9f032dbf407" />
 
 We see that our user does have WinRM shell access to the target, but before I do that, I want to collect data for Bloodhound and perform an analysis there:
-(At this point, you can also login via WinRM to get your user flag)
 
 ```bash
 bloodhound-python -u 'svc-alfresco' -p 's3rvice' -d 'htb.local' -ns 10.129.41.5 -c all --zip
 ```
+
+(At this point, you can also login via WinRM to get your user flag)
+
 Once uploaded, we can see that our owned user is a part of a couple groups which provide some special privileges:
 
 <img width="1344" height="341" alt="image" src="https://github.com/user-attachments/assets/0fb9fac4-8072-4b29-b428-31d15955a54c" />
@@ -87,6 +89,7 @@ Checking for the shortest path to the Administrator user, Bloodhound presents us
 ### Privilege Escalation
 
 Because of the groups our user is a member of, we have GenericAll (full control) permissions over the "Exchange Windows Permissions" group. When we have full control over a group, we can directly modify that group's membership, allowing us to add ourselves.
+
 So, let's add ourselves to that group by using the following command:
 
 ```bash
@@ -115,4 +118,5 @@ With the Administrator hash, we can now attempt to access the host via WinRM:
 <img width="1169" height="243" alt="image" src="https://github.com/user-attachments/assets/8b12c568-ad42-48ea-a1f7-9e19f0d03d3c" />
 
 And we can, so we have successfully owned this target!
+
 (At this point, we can grab the root flag as well)
