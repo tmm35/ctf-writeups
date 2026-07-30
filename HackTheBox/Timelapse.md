@@ -1,11 +1,12 @@
 # Timelapse
 Timelapse is an easy machine from HackTheBox that starts with publicly accessible SMB shares and ends with abusing account permissions to pull the Administrator password from LAPS.
 
-As with any CTF from HackTheBox, I always start with a Nmap scan of the target. Before I do that though, I typically like to set the target IP to a variable first:
+As with any CTF from HackTheBox, I always start with a Nmap scan of the target. Before I do that though, I set the target IP to a variable first:
 
 ```bash
 target=10.129.227.113
 ```
+I don't lways do this, sometimes it just helps me work through the box quicker so I don't always have to go and copy the IP.
 
 From there, I run the following Nmap command:
 
