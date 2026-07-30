@@ -49,7 +49,7 @@ PORT      STATE         SERVICE
 49152/udp open|filtered unknown
 ```
 
-Our intial scans show us that this is a Domain Controller within an Active Directory environment. We know this because of the presense of tcp/88 (Kerberos) and tcp/389 (LDAP)
+Our intial scans show us that this is a Domain Controller within an Active Directory environment. We know this because of the presence of tcp/88 (Kerberos) and tcp/389 (LDAP)
 
 We see there is also FTP, SMB, RDP, WinRM, and a HTTP web server running.
 
