@@ -86,7 +86,7 @@ Checking for the shortest path to the Administrator user, Bloodhound presents us
 
 ### Privilege Escalation
 
-Because of our group privileges, we have GenericAll permissions over the "Exchange Windows Permissions" group. When we have GenericAll (sometimes called full control) over a group, we can directly modify that group's membership, allowing us to add ourselves to the group.
+Because of the groups our user is a member of, we have GenericAll permissions over the "Exchange Windows Permissions" group. When we have GenericAll (sometimes called full control) over a group, we can directly modify that group's membership, allowing us to add ourselves to the group.
 So, let's add ourselves to that group by using the following command:
 
 ```bash
