@@ -63,7 +63,7 @@ Our directory brute force showed nothing interesting:
 
 ```bash
 gobuster dir -u http://stellarcomms.local -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -k -t 100 -o gobuster-medium.txt
-obuster dir -u http://stellarcomms.local -w /usr/share/seclists/Discovery/Web-Content/common.txt -x php,aspx,html,txt,bak,git -k -t 16 -o gobuster-with-extensions.txt
+gobuster dir -u http://stellarcomms.local -w /usr/share/seclists/Discovery/Web-Content/common.txt -x php,aspx,html,txt,bak,git -k -t 16 -o gobuster-with-extensions.txt
 ```
 
 <img width="1655" height="310" alt="image" src="https://github.com/user-attachments/assets/5ee9575c-5db4-4d53-8090-86038c5f6839" />
