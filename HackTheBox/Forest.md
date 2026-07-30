@@ -94,7 +94,7 @@ net rpc group addmem "Exchange Windows Permissions" "svc-alfresco" -U "htb.local
 ```
 <img width="1379" height="99" alt="image" src="https://github.com/user-attachments/assets/84758006-c36e-4bb4-9a5c-8a3265363fcd" />
 
-Now that we have done that, we are now in a group that has WriteDACL permission over the domain. This is very dangerous because it allows us to have full control over the domain. With full control over the domain, we can give ourselves 'DCSync' rights over the domain and perform a DCSyn attack.
+Now that we have done that, we are now in a group that has WriteDACL permission over the domain. This is very dangerous because it allows us to have full control over the domain. With full control over the domain, we can give ourselves 'DCSync' rights over the domain and perform a DCSync attack.
 
 To exploit this, we first grant ourselves permission to perform a DCSync by using Imapcket's dacledit.py:
 
