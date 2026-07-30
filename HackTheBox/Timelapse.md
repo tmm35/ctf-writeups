@@ -6,7 +6,7 @@ As with any CTF from HackTheBox, I always start with a Nmap scan of the target. 
 ```bash
 target=10.129.227.113
 ```
-I don't lways do this, sometimes it just helps me work through the box quicker so I don't always have to go and copy the IP.
+I don't always do this, sometimes it just helps me work through the box quicker so I don't always have to go and copy the IP.
 
 From there, I run the following Nmap command:
 
