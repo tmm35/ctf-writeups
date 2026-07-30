@@ -1,6 +1,6 @@
 # CTF Writeups
 
-These are my personal writeups from the boxes I have worked through from HacktheBox, HackSmarter, and OffSec Proving Grounds.
+These are my personal writeups from the boxes I have worked through from HacktheBox, HackSmarter, and OffSec.
 
 ## Index
 
@@ -8,5 +8,5 @@ These are my personal writeups from the boxes I have worked through from Hackthe
 | --- |
 | [HackTheBox](HackTheBox) |
 | [HackSmarter](HackSmarter) |
-| [OffSec Proving Grounds](OffSec-Proving-Grounds)
+| [OffSec](OffSec)
 
