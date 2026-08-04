@@ -22,33 +22,6 @@ rustscan -a 10.1.136.251 -- -Pn -sVC -oN full-tcp-scan.txt
 
 <img width="1658" height="1208" alt="image" src="https://github.com/user-attachments/assets/2e233b4f-f336-4d88-97ac-05fc8c643592" />
 
-```bash
-sudo nmap -sU --top-ports 20 --open -oN nmap-udp20.txt 10.1.136.251
-```
-
-```txt
-PORT      STATE         SERVICE
-53/udp    open          domain
-67/udp    open|filtered dhcps
-68/udp    open|filtered dhcpc
-69/udp    open|filtered tftp
-123/udp   open          ntp
-135/udp   open|filtered msrpc
-137/udp   open|filtered netbios-ns
-138/udp   open|filtered netbios-dgm
-139/udp   open|filtered netbios-ssn
-161/udp   open|filtered snmp
-162/udp   open|filtered snmptrap
-445/udp   open|filtered microsoft-ds
-500/udp   open|filtered isakmp
-514/udp   open|filtered syslog
-520/udp   open|filtered route
-1434/udp  open|filtered ms-sql-m
-1900/udp  open|filtered upnp
-4500/udp  open|filtered nat-t-ike
-49152/udp open|filtered unknown
-```
-
 Our intial scans show us that this is a Domain Controller within an Active Directory environment. We know this because of the presence of tcp/88 (Kerberos) and tcp/389 (LDAP)
 
 We see there is also FTP, SMB, RDP, WinRM, and a HTTP web server running.
